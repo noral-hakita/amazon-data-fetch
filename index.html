@@ -407,7 +407,7 @@
         <footer>
             <p>PDF documents will be sent to the n8n webhook for processing</p>
             <div class="webhook-info">
-                Webhook URL: https://noral.gleeze.com/webhook-test/fetch-data | Method: POST
+                Webhook URL: https://noral.gleeze.com/webhook/fetch-data | Method: POST
             </div>
             <p style="margin-top: 20px;">&copy; 2026 SBL South Beach Leather.</p>
         </footer>
@@ -554,7 +554,7 @@
                 formData.append('fileCount', files.length.toString());
                 
                 // Send to n8n webhook
-                const response = await fetch('https://noral.gleeze.com/webhook-test/fetch-data', {
+                const response = await fetch('https://noral.gleeze.com/webhook/fetch-data', {
                     method: 'POST',
                     body: formData
                 });
